@@ -6,7 +6,7 @@ public class MainScrabble {
     
     public static void main(String args[]){
 
-        /*Ut.afficher("Combien de Joueurs pour cette Partie ? (Maximum 8 joueurs)  ");
+        Ut.afficher("Combien de Joueurs pour cette Partie ? (Maximum 8 joueurs)  ");
         int nbJoueur = Ut.saisirEntier();
         while(!(nbJoueur <= 8 && nbJoueur >= 2)){
             Ut.clearConsole();
@@ -18,7 +18,7 @@ public class MainScrabble {
         for (int i = 0; i < tabNomJoueur.length; i++) {
             Ut.afficher("Saisir non Joueurs " + (i+1) );
             tabNomJoueur[i] = Ut.saisirChaine();
-        }*/
+        }
 
        
         /** 
@@ -27,7 +27,6 @@ public class MainScrabble {
         Dico dico = new Dico(); // Crée une ArrayList qui contiens le contenu du fichier dicoReference
         dico.ajtMot();
        
-        String[] tabNomJoueur = {"Rayan","Lucaslepd","Hitler"};
         Scrabble partie = new Scrabble(tabNomJoueur);
         partie.partie();
 

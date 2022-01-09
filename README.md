@@ -19,4 +19,4 @@ Pour executer notre code, il suffira de faire $ java MainScrabble
 
 --------
 
-Voila vous pouvez maintenant jouer a une version (presque) parfaite du Scrabble ! 
+Voila vous pouvez maintenant jouer a une version (PRESQUE) parfaite du Scrabble ! 

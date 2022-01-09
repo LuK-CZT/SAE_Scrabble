@@ -143,7 +143,7 @@ public class Joueur {
     /** pré-requis : sac peut contenir des entiers de 0 à 25 et ensJetons
      * est un ensemble de jetons correct pour l’échange
      * action : simule l’échange de jetons de ensJetons avec des
-     * jetons du sac tirés aléatoirement.Negro
+     * jetons du sac tirés aléatoirement.
     */
     public void echangeJetonsAux(MEE sac, String ensJetons) {
         for(int i= 0; i< ensJetons.length() ; i++ ){

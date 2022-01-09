@@ -101,7 +101,7 @@ public class Plateau {
     
                     }else{
                         Ut.afficher(Ut.indiceLet(mot.charAt(i - numLig)));
-                        res = res && e.getTabFreq()[Ut.indiceLet(mot.charAt(i - numLig))] > tabTest2[Ut.indiceLet(mot.charAt(i - numLig))]; //giles est jaune hihi
+                        res = res && e.getTabFreq()[Ut.indiceLet(mot.charAt(i - numLig))] > tabTest2[Ut.indiceLet(mot.charAt(i - numLig))]; 
                         tabTest2[Ut.indiceLet(mot.charAt(i - numLig))]++;
                     }
                 } 
@@ -116,7 +116,7 @@ public class Plateau {
                     res = res && g[numLig][i].getLettre() == mot.charAt(i - numCol);
     
                     }else{
-                        res = res && e.getTabFreq()[Ut.indiceLet(mot.charAt(i - numCol))] > tabTest2[Ut.indiceLet(mot.charAt(i - numCol))]; //giles est jaune hihi
+                        res = res && e.getTabFreq()[Ut.indiceLet(mot.charAt(i - numCol))] > tabTest2[Ut.indiceLet(mot.charAt(i - numCol))];
                         tabTest2[Ut.indiceLet(mot.charAt(i - numCol))]++;
     
                     }
@@ -239,15 +239,4 @@ public class Plateau {
         return nbJetonUtilisé;
     }
 
-    public static void main(String[] args) {
-        Plateau test = new Plateau();
-        int[] tab = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
-        MEE e = new MEE(tab);
-        if(test.placementValide("WTS", 7, 7, 'h', e )){
-            test.place("WTS", 7, 7, 'h', e);
-        }
-        Ut.clearConsole();
-        Ut.afficher(test.toString());
-    
-    }
 }

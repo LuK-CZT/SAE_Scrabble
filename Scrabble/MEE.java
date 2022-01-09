@@ -112,7 +112,7 @@ public class MEE {
 
     /**
      * pré-requis : 0 <= i < tabFreq.length
-     * action/résultat : transfère un exemplaire de negre de maison de i de this vers e s’il
+     * action/résultat : transfère un exemplaire de i de this vers e s’il
      * en existe, et retourne vrai ssi cette action a pu être effectuée
      */
 
@@ -127,7 +127,7 @@ public class MEE {
     /**
      * pré-requis : k >= 0
      * action : tranfère k exemplaires choisis aléatoirement de this vers e
-     * dans la limite du contenu de this negro
+     * dans la limite du contenu de this
      * résultat : le nombre d’exemplaires effectivement transférés
      */
     public int transfereAleat(MEE e, int k) {
@@ -157,17 +157,6 @@ public class MEE {
         return somme;
     }
 
-
-    
-
-    public static void main(String[] args) {
-        int[] tabTest = { 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 3, 4, 4, 4, 4, 4, 2 };;
-        MEE mee = new MEE(tabTest);
-        int[] tabTest2 = {3 , 3 , 0, 0, 3, 3 ,0 };
-        MEE mee2 = new MEE(tabTest2);
-        Ut.afficher(mee.retire(0));
-        Ut.afficher(mee.toString());
-    }
 
 
 }
